@@ -21,6 +21,8 @@ sudo perl -pe 's/raspberrypi/apsync/' -i /etc/hosts
 sudo systemctl disable serial-getty@ttyS0.service
 sudo perl -pe 's/ console=serial0,115200//' -i /boot/cmdline.txt
 
+# disable bluetooth on pi4 for stable uart clock
+echo "dtoverlay=disable-bt" | sudo tee -a /boot/config.txt >/dev/null
 ## Power switch config
 echo "" | sudo tee -a /boot/config.txt >/dev/null
 echo "# Power switch" | sudo tee -a /boot/config.txt >/dev/null
