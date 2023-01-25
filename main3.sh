@@ -3,7 +3,7 @@
 ## Part 3/3 - Wifi access point
 set -e
 set -x
-
+cd ~/apsync-Kakute/
 ./wifi_access_point.sh
 
 ## Remove any not required packages
