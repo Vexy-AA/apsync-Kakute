@@ -6,7 +6,7 @@ set -x
 # this script sets up the wifi access point
 
 # NOTE: if something goes wrong with this setup, and you are unable to connect to the TX1, connect a keyboard and mouse and type "sudo dhclient eth0"
-sudo apt install dnsmasq haveged -y
+#sudo apt install dnsmasq haveged -y
 
 # stop dnsmasq from running outside of where we want it to:
 sudo systemctl disable dnsmasq

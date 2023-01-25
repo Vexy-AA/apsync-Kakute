@@ -7,7 +7,7 @@ set -x
 
 sudo rm /etc/network/interfaces
 sudo touch /etc/network/interfaces
-sudo apt-get install -y network-manager
+sudo apt install -y network-manager dnsmasq haveged
 
 sudo systemctl disable networking
 sudo systemctl stop networking
