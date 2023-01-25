@@ -4,7 +4,7 @@ set -e
 set -x
 
 rm -rf ~/APStreamline
-sudo apt install ninja-build libgstreamer-plugins-base1.0* libgstreamer1.0-dev libgstrtspserver-1.0-dev gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly -y
+sudo apt install libconfig++-dev cmake ninja-build libgstreamer-plugins-base1.0* libgstreamer1.0-dev libgstrtspserver-1.0-dev gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly -y
 pip3 install meson --user
 
 sudo modprobe bcm2835-v4l2
