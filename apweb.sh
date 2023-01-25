@@ -9,7 +9,7 @@ sudo apt install python3-pip python2 libtalloc-dev -y
 pip install future --user
 
 [ -d ~/APWeb ] || {
-    git clone https://github.com/ArduPilot/APWeb.git
+    git clone -b video_streaming https://github.com/shortstheory/APWeb.git
 }
 pushd ~/APWeb
 	pushd ./modules
