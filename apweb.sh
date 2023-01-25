@@ -7,7 +7,8 @@ rm -rf APWeb
 
 sudo apt install python3-pip python2 libtalloc-dev -y
 pip install future --user
-
+#wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
+#python2.7 -m pip install future --user
 [ -d ~/APWeb ] || {
     git clone -b video_streaming https://github.com/shortstheory/APWeb.git
 }
@@ -18,6 +19,7 @@ pushd ~/APWeb
 		 git submodule update --init --recursive
 		popd
 	popd
+cp ~/apsync-Kakute/embed.py ~/APWeb/files/embed.py
  make CFLAGS=-Wno-error
 popd
 
