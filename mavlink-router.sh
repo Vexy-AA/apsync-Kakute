@@ -7,6 +7,7 @@ sudo apt install autoconf automake libtool -y
 sudo apt install git meson ninja-build pkg-config gcc g++ systemd -y
 sudo pip3 install meson
 
+pushd ~/
 ## Git clone mavlink-router
 rm -rf ~/mavlink-router
 [ -d ~/mavlink-router ] || {
@@ -23,4 +24,5 @@ pushd ~/mavlink-router
  sudo cp ~/apsync-Kakute/mavlink-router.conf /etc/mavlink-router/main.conf
  sudo systemctl enable mavlink-router.service
  sudo systemctl start mavlink-router.service
+popd
 popd
