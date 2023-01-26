@@ -22,3 +22,4 @@ pushd ~/APStreamline
   sudo cp $HOME/start_apstreamline/bin/stream_server /bin/stream_server
  popd
 popd
+cp -r ~/APStreamline/config* ~/APWeb/
